@@ -79,8 +79,13 @@ const ChatInterface = () => {
     <div className="flex flex-col h-screen max-w-4xl mx-auto p-4">
       {/* Header */}
       <header className="flex items-center justify-between mb-4">
-        <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-[#EC0016]">UBS Chat Assistant</h1>
+        <div className="flex items-center gap-3">
+          <img 
+            src="/lovable-uploads/900c1082-d247-49e5-8a61-50d4772ed5c7.png" 
+            alt="UBS Logo" 
+            className="h-8"
+          />
+          <h1 className="text-2xl font-bold text-[#EC0016]">GWM Client Services Cockpit</h1>
         </div>
         <Button 
           variant="outline" 
@@ -97,7 +102,7 @@ const ChatInterface = () => {
       <div className="flex-1 overflow-y-auto mb-4 space-y-4 pr-2">
         {messages.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-gray-500">
-            <p className="text-xl mb-2">Welcome to UBS Chat Assistant</p>
+            <p className="text-xl mb-2">Welcome to GWM Client Services Cockpit</p>
             <p className="text-sm">Ask any question about UBS history and services</p>
           </div>
         ) : (
@@ -152,7 +157,7 @@ const ChatInterface = () => {
 
       {/* Footer */}
       <footer className="mt-4 text-xs text-gray-500 text-center">
-        <p>UBS Chat Assistant © {new Date().getFullYear()}</p>
+        <p>GWM Client Services Cockpit © {new Date().getFullYear()}</p>
       </footer>
     </div>
   );
