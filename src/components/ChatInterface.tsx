@@ -103,7 +103,7 @@ const ChatInterface = () => {
         {messages.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-gray-500">
             <p className="text-xl mb-2">Welcome to GWM Client Services Cockpit</p>
-            <p className="text-sm">Ask any question about UBS history and services</p>
+            <p className="text-sm">Ask any question about GWM services products</p>
           </div>
         ) : (
           messages.map((msg, index) => (
